@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+  @media (min-width: 1170px) {
+    .container {
+        max-width: 1170px;
+        padding: 0;
+    }
+  }
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+    .row:after {
+        clear: both;
+    }
+
+    /* columns */
+    .col {
+        display: inline-block;
+        min-height: 1px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        margin-right: -4px;
+        *zoom: 1;
+        *display: inline;
+    }
+
+        /* two columns */
+        @media (min-width: 480px) {
+            .col-header-logo {
+                width: 20%;
+            }
+
+            .col-header-title {
+                width: 80%;
+            }
+        }
+
+        /* sidebar and content */
+        @media (min-width: 992px) {
+            .col-content {
+                width:60%;
+            }
+
+            .col-sidebar {
+               width: 40%;
+            }
+        }
+
+        /* three columns */
+        @media (min-width: 800px) {
+            .col-feature {
+                width: 33.3333%;
+            }
+        }
+
+.teste {
+  padding: 5px;
+  text-align: center;
+  margin: 2px 0;
+}
+
+.header__logo {
+  height: 100px;
+}
+
+.header__title {
+  font-family: Roboto;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: lighter;
+}
+
+.header__subtitle {
+  font-family: Roboto;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.border {
+  border-bottom: 5px solid #f406ab;
+}
+
+.description {
+  font-family: Roboto;
+  text-align: justify;
+  display: table-cell;
+  vertical-align: top;
+  height: 150px;
+}
+
+.featured__title {
+  font-family: Roboto;
+  font-weight: lighter;
+  font-size: 40px;
+  color: #7d97ad;
+  text-align: left;
+}
+
+.project__name {
+  font-family: Roboto;
+  font-weight: normal;
+  color: #2d3c49;
+  text-transform: uppercase;
+}
